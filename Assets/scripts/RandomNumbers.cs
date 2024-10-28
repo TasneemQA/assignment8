@@ -12,8 +12,11 @@ public class RandomNumbers : MonoBehaviour
         while (count < 20)
         {
             int randomNumber = Random.Range(1, 21);
-            if (randomNumber == 5)
+            if (randomNumber == 5){
+                count++;
                 continue;
+            }
+                
             if (randomNumber == 15)
                 break;
             Debug.Log(randomNumber);
